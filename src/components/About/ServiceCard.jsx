@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
-export const ServiceCard = ({ image, title, category }) => {
+const ServiceCard = ({ image, title, category }) => {
   return (
     <div className="flex flex-col items-center text-center">
       <div className="relative mb-6">
@@ -20,3 +20,6 @@ export const ServiceCard = ({ image, title, category }) => {
     </div>
   );
 };
+
+export default ServiceCard;
+

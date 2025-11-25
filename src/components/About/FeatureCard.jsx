@@ -1,8 +1,4 @@
-
-import React from 'react';
-import { Video as LucideIcon } from 'lucide-react';
-
-export const FeatureCard = ({ icon: Icon, title, description }) => {
+const FeatureCard = ({ icon: Icon, title, description }) => {
   return (
     <div className="flex gap-4">
       <div className="flex-shrink-0">
@@ -15,3 +11,5 @@ export const FeatureCard = ({ icon: Icon, title, description }) => {
     </div>
   );
 };
+
+export default FeatureCard;

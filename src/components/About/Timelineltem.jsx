@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const TimelineItem = ({ year, title, description }) => {
+const TimelineItem = ({ year, title, description }) => {
   return (
     <div className="flex flex-col">
       <div className="text-6xl font-bold text-gray-200 mb-4">{year}</div>
@@ -10,3 +10,5 @@ export const TimelineItem = ({ year, title, description }) => {
     </div>
   );
 };
+
+export default TimelineItem;

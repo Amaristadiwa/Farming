@@ -1,5 +1,4 @@
 import { ArrowUpRight } from 'lucide-react';
-import maskShape from '../assets/Mask Group.png';
 
 export default function ServiceCard({ image, category, title, description }) {
   return (
@@ -10,23 +9,6 @@ export default function ServiceCard({ image, category, title, description }) {
           alt={title}
           className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
         />
-        <div
-          className="absolute inset-0"
-          style={{
-            maskImage: `url(${maskShape})`,
-            maskSize: 'cover',
-            maskPosition: 'center',
-            WebkitMaskImage: `url(${maskShape})`,
-            WebkitMaskSize: 'cover',
-            WebkitMaskPosition: 'center',
-          }}
-        >
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-          />
-        </div>
       </div>
 
       <div className="p-6">
@@ -43,3 +25,4 @@ export default function ServiceCard({ image, category, title, description }) {
     </div>
   );
 }
+

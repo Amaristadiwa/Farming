@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
-export const TestimonialCard = ({ rating, text, author, role, avatar }) => {
+const TestimonialCard = ({ rating, text, author, role, avatar }) => {
   return (
     <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
       <div className="flex gap-1 mb-4">
@@ -24,3 +24,6 @@ export const TestimonialCard = ({ rating, text, author, role, avatar }) => {
     </div>
   );
 };
+
+export default TestimonialCard;
+

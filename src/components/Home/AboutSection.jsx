@@ -7,7 +7,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/4503271/pexels-photo-4503271.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="src\images\bbf039044044b2e7b8fbee60796133ec7b3a4031.jpg"
               alt="Farmer"
               className="rounded-3xl w-full h-[600px] object-cover"
             />

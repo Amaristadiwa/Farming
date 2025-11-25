@@ -16,7 +16,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="https://images.pexels.com/photos/2131784/pexels-photo-2131784.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src="src/images/fac523f62a67634ba7d3d4a2906f19cf498f0573.jpg"
               alt="Happy farmers"
               className="w-full h-full object-cover"
             />

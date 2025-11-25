@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from "../components/Navbar/Navbar";
-import Hero from './components/Service/hero';
-import ServicesGrid from './components/Service/ServiceGrid';
-import CategoryBar from './components/Service/CategoryBar';
-import Footer from './components/Footer/Footer';
+import Hero from '../components/Service/Hero';
+import ServicesGrid from '../components/Service/ServiceGrid';
+import CategoryBar from '../components/Service/CategoryBar';
+import Footer from '../components/Footer/Footer';
 
 export default function Service() {
   return (

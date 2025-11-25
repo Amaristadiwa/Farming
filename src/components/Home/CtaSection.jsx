@@ -7,7 +7,7 @@ export default function CtaSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <img
-              src="https://images.pexels.com/photos/4503258/pexels-photo-4503258.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="src\images\e3a4b505969c511f04f6db863fc26b803f881806.jpg"
               alt="Farmer"
               className="rounded-3xl w-full h-[500px] object-cover"
             />

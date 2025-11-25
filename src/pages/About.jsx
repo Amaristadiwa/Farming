@@ -1,16 +1,57 @@
 import React from 'react';
+import { useState } from "react";
 import { Sprout, Truck, Calendar, Leaf, ArrowRight } from 'lucide-react';
-import { Hero } from '../components/About/hero';
-import { StatsCard } from '../components/About/StatsCard';
-import { FeatureCard } from '../components/About/FeatureCard';
-import { ServiceCard } from '../components/About/ServiceCard';
-import { TimelineItem } from '../components/About/Timelineltem';
-import { TestimonialCard } from '../components/About/Testimonialcard';
-import { IconFeature } from '../components/About/IconFeature';
-import { NavBar } from '../components/Navbar/Navbar';
-import { Footer } from '../components/Footer/Footer';
+import Hero from '../components/About/hero';
+import StatsCard from '../components/About/StatsCard';
+import FeatureCard from '../components/About/FeatureCard';
+import ServiceCard from '../components/About/ServiceCard';
+import TimelineItem from '../components/About/Timelineltem';
+import TestimonialCard from '../components/About/TestimonialCard';
+import IconFeature from '../components/About/IconFeature';
+import NavBar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
 
-export const AboutUs = () => {
+import serv1 from '../assets/serv 1.jpg';
+import serv2 from '../assets/serv 2.jpg';
+import serv3 from '../assets/serv 3.jpg';
+import serv4 from '../assets/serv 4.jpg';
+import serv5 from '../assets/serv 5.jpg';
+import serv6 from '../assets/serv 6.jpg';
+import serv7 from '../assets/serv 7.jpg';
+import serv8 from '../assets/serv 8.jpg';
+import serv9 from '../assets/serv 9.jpg';
+import serv10 from '../assets/serv 10.jpg';
+import serv11 from '../assets/serv 11.jpg';
+import serv12 from '../assets/serv 12.jpg';
+
+function About() {
+  const words = ["Agriculture", "Farming", "Organic", "Vegetables", "Fresh Food"];
+
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const servicesData = [
+    [
+      { image: serv1, title: "Harvest Concepts", category: "Fertilizer" },
+      { image: serv2, title: "Farming Products", category: "Fruits" },
+      { image: serv3, title: "Soil fertilization", category: "Fertilizer" },
+      { image: serv4, title: "Fresh vegetables", category: "Fruits" },
+    ],
+    [
+      { image: serv5, title: "Organic Seeds", category: "Seeds" },
+      { image: serv6, title: "Irrigation Setup", category: "Water" },
+      { image: serv7, title: "Farm Tools", category: "Equipment" },
+      { image: serv8, title: "Livestock Feed", category: "Animal Care" },
+    ],
+    [
+      { image: serv9, title: "Greenhouses", category: "Farming" },
+      { image: serv10, title: "Agri Consultancy", category: "Services" },
+      { image: serv11, title: "Compost Solutions", category: "Fertilizer" },
+      { image: serv12, title: "Farm Machinery", category: "Equipment" },
+    ],
+  ];
+
+
+
   return (
     <div className="min-h-screen bg-cream-50">
       <div className="max-w-7xl mx-auto px-8 py-6">
@@ -19,13 +60,12 @@ export const AboutUs = () => {
         <Hero
           title="About Us"
           subtitle="Home → About"
-          backgroundImage="https://images.pexels.com/photos/2382894/pexels-photo-2382894.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          backgroundImage="../src/images/56d2d3996939328860a9427715a3d02d7fdc38f5.jpg"
         />
-
         <div className="grid grid-cols-2 gap-12 my-16">
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/6231733/pexels-photo-6231733.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="../src/images/bbf039044044b2e7b8fbee60796133ec7b3a4031.jpg"
               alt="Farmer"
               className="rounded-2xl w-full h-[500px] object-cover"
             />
@@ -58,107 +98,148 @@ export const AboutUs = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-yellow-50 to-green-50 py-12 rounded-2xl mb-16">
-          <div className="flex items-center justify-center gap-8 overflow-hidden">
-            {['Agriculture', 'Farming', 'Organic', 'Vegetables'].map((word) => (
-              <React.Fragment key={word}>
-                <Leaf className="w-8 h-8 text-green-600" />
-                <span className="text-4xl font-bold text-gray-200">{word}</span>
-              </React.Fragment>
+    
+        <section className="py-12 bg-gradient-to-r from-yellow-50 to-green-50 rounded-2xl mb-16 overflow-hidden border border-green-100">
+          <div className="flex items-center animate-scroll whitespace-nowrap">
+            {[...Array(3)].map((_, groupIndex) => (
+              <div key={groupIndex} className="flex items-center">
+                {words.map((word, index) => (
+                  <div key={`${groupIndex}-${index}`} className="flex items-center">
+                    <Leaf className="w-10 h-10 text-green-700" />
+                    <span
+                      className="text-6xl md:text-7xl font-bold text-transparent px-8"
+                      style={{
+                        WebkitTextStroke: "1px #9ca3af",
+                        fontWeight: 700,
+                      }}
+                    >
+                      {word}
+                    </span>
+                    <span className="text-green-700 text-4xl px-4">✱</span>
+                  </div>
+                ))}
+              </div>
             ))}
           </div>
-        </div>
 
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Sprout className="w-5 h-5 text-green-700" />
-            <div className="text-sm text-gray-600 font-medium">Who We Are</div>
-          </div>
-          <h2 className="text-5xl font-bold text-gray-900">Best Agriculture Services</h2>
-        </div>
+          <style>{`
+            @keyframes scroll {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-33.333%);
+              }
+            }
+            .animate-scroll {
+              animation: scroll 30s linear infinite;
+            }
+          `}</style>
+        </section>
 
-        <div className="grid grid-cols-4 gap-12 mb-16 relative">
+      <section>
+      {/* Section Header */}
+      <div className="text-center mb-16">
+        <div className="flex items-center justify-center gap-2 mb-4">
+          <Sprout className="w-5 h-5 text-green-700" />
+          <div className="text-sm text-gray-600 font-medium">Who We Are</div>
+        </div>
+        <h2 className="text-5xl font-bold text-gray-900">Best Agriculture Services</h2>
+      </div>
+
+      {/* Service Cards */}
+      <div className="grid grid-cols-4 gap-12 mb-16 relative">
+        {servicesData[activeSlide].map((service, index) => (
           <ServiceCard
-            image="https://images.pexels.com/photos/2132250/pexels-photo-2132250.jpeg?auto=compress&cs=tinysrgb&w=600"
-            title="Harvest Concepts"
-            category="Fertilizer"
+            key={index}
+            image={service.image}
+            title={service.title}
+            category={service.category}
           />
-          <ServiceCard
-            image="https://images.pexels.com/photos/2910241/pexels-photo-2910241.jpeg?auto=compress&cs=tinysrgb&w=600"
-            title="Farming Products"
-            category="Fruits"
-          />
-          <ServiceCard
-            image="https://images.pexels.com/photos/2889440/pexels-photo-2889440.jpeg?auto=compress&cs=tinysrgb&w=600"
-            title="Soil fertilization"
-            category="Fertilizer"
-          />
-          <ServiceCard
-            image="https://images.pexels.com/photos/4750274/pexels-photo-4750274.jpeg?auto=compress&cs=tinysrgb&w=600"
-            title="Fresh vegetables"
-            category="Fruits"
-          />
-        </div>
+        ))}
+      </div>
 
-        <div className="flex justify-center gap-2 mb-16">
-          <button className="w-3 h-3 rounded-full bg-yellow-400"></button>
-          <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-          <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-          <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-          <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-          <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-        </div>
+      {/* Carousel Dots */}
+      <div className="flex justify-center gap-2 mb-16">
+        {servicesData.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setActiveSlide(index)}
+            className={`w-3 h-3 rounded-full transition-colors ${
+              activeSlide === index ? "bg-yellow-400" : "bg-gray-300"
+            }`}
+          ></button>
+        ))}
+      </div>
+    </section>
 
-        <div className="bg-green-700 rounded-2xl p-12 grid grid-cols-2 gap-12 mb-16">
-          <div>
-            <div className="text-sm text-green-300 font-semibold mb-2">COMPANY BENEFITS</div>
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Agriculture matters to the future of development
-            </h2>
-            <img
-              src="https://images.pexels.com/photos/2995012/pexels-photo-2995012.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Farmers"
-              className="rounded-2xl w-full h-64 object-cover"
-            />
-            <button className="mt-6 bg-yellow-400 text-gray-900 p-4 rounded-full hover:bg-yellow-300 transition-colors">
-              <ArrowRight className="w-6 h-6" />
-            </button>
-          </div>
+{/* Company Benefits */}
+<div
+  className="relative rounded-2xl p-12 grid grid-cols-2 gap-12 mb-16 bg-cover bg-center overflow-hidden"
+  style={{
+    backgroundImage:
+      "url('../src/images/6ac5b4dbd5aad3b155da75cbafefdeb1083363eb.png')",
+  }}
+>
+  {/* Soft green overlay */}
+  <div className="absolute inset-0 bg-green-800/70 mix-blend-multiply rounded-2xl"></div>
 
-          <div>
-            <p className="text-white mb-8 leading-relaxed">
-              There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form by injected humour or randomised.
-            </p>
+  {/* Content */}
+  <div className="relative z-10">
+    <div className="text-sm text-green-200 font-semibold mb-2">
+      COMPANY BENEFITS
+    </div>
+    <h2 className="text-4xl font-bold text-white mb-6">
+      Agriculture matters to the future of development
+    </h2>
+    <img
+      src="../src/images/1da4a8461f43255e5cd02a6b142104ebba1a681f.jpg"
+      alt="Farmers"
+      className="rounded-2xl w-full h-64 object-cover"
+    />
+    <button className="mt-6 bg-yellow-400 text-gray-900 p-4 rounded-full hover:bg-yellow-300 transition-colors">
+      <ArrowRight className="w-6 h-6" />
+    </button>
+  </div>
 
-            <div className="space-y-4">
-              <IconFeature
-                icon={Calendar}
-                number="01"
-                title="Schedule Your Farmer"
-                description="There are many variations of the passages of available but the majority."
-              />
-              <IconFeature
-                icon={Sprout}
-                number="02"
-                title="Get Professional"
-                description="Lorem ipsum dolor sit amet consectetur, but majority have suffered alteration."
-              />
-              <IconFeature
-                icon={Leaf}
-                number="03"
-                title="Meet Our Expert"
-                description="There are many variations of passages of available but the majority."
-              />
-              <IconFeature
-                icon={Truck}
-                number="04"
-                title="Have Got a Visit"
-                description="There are many variations of passages of available but the majority."
-              />
-            </div>
-          </div>
-        </div>
+  <div className="relative z-10">
+    <p className="text-white/90 mb-8 leading-relaxed">
+      There are many variations of passages of Lorem Ipsum available, but
+      majority have suffered alteration in some form by injected humour or
+      randomised.
+    </p>
 
+    <div className="space-y-4">
+      <IconFeature
+        icon={Calendar}
+        number="01"
+        title="Schedule Your Farmer"
+        description="There are many variations of the passages of available but the majority."
+      />
+      <IconFeature
+        icon={Sprout}
+        number="02"
+        title="Get Professional"
+        description="Lorem ipsum dolor sit amet consectetur, but majority have suffered alteration."
+      />
+      <IconFeature
+        icon={Leaf}
+        number="03"
+        title="Meet Our Expert"
+        description="There are many variations of passages of available but the majority."
+      />
+      <IconFeature
+        icon={Truck}
+        number="04"
+        title="Have Got a Visit"
+        description="There are many variations of passages of available but the majority."
+      />
+    </div>
+  </div>
+</div>
+
+
+        {/* Our History */}
         <div className="mb-16">
           <div className="text-sm text-green-700 font-semibold mb-2">OUR HISTORY</div>
           <h2 className="text-4xl font-bold text-gray-900 mb-12">Farming have been since 1866</h2>
@@ -191,9 +272,13 @@ export const AboutUs = () => {
           </div>
         </div>
 
+        {/* Call to Action */}
         <div
           className="bg-green-800 rounded-2xl p-12 mb-16 bg-cover bg-center relative overflow-hidden"
-          style={{ backgroundImage: 'url(https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=1200)' }}
+          style={{
+            backgroundImage:
+              'url(../src/images/6ac5b4dbd5aad3b155da75cbafefdeb1083363eb.png)',
+          }}
         >
           <div className="absolute inset-0 bg-green-900/80"></div>
           <div className="relative z-10 flex items-center justify-between">
@@ -213,6 +298,7 @@ export const AboutUs = () => {
           </div>
         </div>
 
+        {/* Testimonials */}
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-12">What our customers say</h2>
 
@@ -241,6 +327,7 @@ export const AboutUs = () => {
           </div>
         </div>
 
+        {/* Footer CTA */}
         <div className="bg-yellow-300 rounded-2xl py-8 px-12 mb-8">
           <div className="text-center">
             <p className="text-gray-700 italic text-lg">
@@ -253,4 +340,8 @@ export const AboutUs = () => {
       </div>
     </div>
   );
-};
+}
+
+export default About;
+
+

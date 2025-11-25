@@ -1,7 +1,6 @@
-import React from "react";
-import FAQItem from "./FAQItem";
+import FAQItem from '../FQA/FQAItem';
 
-export default function FAQSection({ title, subtitle, faqs, variant = "white" }) {
+export default function FAQSection({ title, subtitle, faqs, variant = 'white' }) {
   return (
     <div className="mb-16">
       <div className="mb-6">
@@ -24,3 +23,4 @@ export default function FAQSection({ title, subtitle, faqs, variant = "white" })
     </div>
   );
 }
+

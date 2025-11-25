@@ -1,7 +1,7 @@
 import React from 'react';
 import { Video as LucideIcon } from 'lucide-react';
 
-export const IconFeature = ({ icon: Icon, number, title, description }) => {
+const IconFeature = ({ icon: Icon, number, title, description }) => {
   return (
     <div className="flex gap-4 items-start bg-white rounded-lg p-4">
       <div className="flex-shrink-0 bg-green-100 rounded-lg p-3">
@@ -17,3 +17,6 @@ export const IconFeature = ({ icon: Icon, number, title, description }) => {
     </div>
   );
 };
+
+export default IconFeature;
+

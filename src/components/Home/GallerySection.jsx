@@ -1,10 +1,13 @@
+import image7 from "../../assets/image7.jpg";
+import image8 from "../../assets/image8.jpg";
+import image9 from "../../assets/image9.jpg";
+import image10 from "../../assets/image10.jpg";
+
+
 export default function GallerySection() {
-  const images = [
-    'https://images.pexels.com/photos/4505163/pexels-photo-4505163.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/4503271/pexels-photo-4503271.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/4503289/pexels-photo-4503289.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/4503285/pexels-photo-4503285.jpeg?auto=compress&cs=tinysrgb&w=400',
-  ];
+const images = [image7, image8, image9, image10];
+
+
 
   return (
     <section className="py-20 bg-gray-50">

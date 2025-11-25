@@ -18,9 +18,7 @@ export default function Hero() {
               placeholder="Services"
               className="w-full px-6 py-4 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             />
-            <button className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-500 transition">
-              <Search className="w-5 h-5 text-green-900" />
-            </button>
+          
           </div>
 
           <h1 className="text-5xl font-bold text-white mb-4">Services</h1>
