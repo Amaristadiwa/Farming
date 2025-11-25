@@ -6,7 +6,7 @@ import StatsCard from '../components/About/StatsCard';
 import FeatureCard from '../components/About/FeatureCard';
 import ServiceCard from '../components/About/ServiceCard';
 import TimelineItem from '../components/About/Timelineltem';
-import TestimonialCard from '../components/About/TestimonialCard';
+import Testimonialcard from '../components/About/Testimonialcard';
 import IconFeature from '../components/About/IconFeature';
 import NavBar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
