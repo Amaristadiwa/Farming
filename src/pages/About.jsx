@@ -24,6 +24,8 @@ import serv10 from '../assets/serv 10.jpg';
 import serv11 from '../assets/serv 11.jpg';
 import serv12 from '../assets/serv 12.jpg';
 
+
+
 function About() {
   const words = ["Agriculture", "Farming", "Organic", "Vegetables", "Fresh Food"];
 
@@ -60,12 +62,12 @@ function About() {
         <Hero
           title="About Us"
           subtitle="Home → About"
-          backgroundImage="../src/images/56d2d3996939328860a9427715a3d02d7fdc38f5.jpg"
+          backgroundImage="../../src/assets/56d2d3996939328860a9427715a3d02d7fdc38f5.jpg"
         />
         <div className="grid grid-cols-2 gap-12 my-16">
           <div className="relative">
             <img
-              src="../src/images/bbf039044044b2e7b8fbee60796133ec7b3a4031.jpg"
+              src="../../src/assets/bbf039044044b2e7b8fbee60796133ec7b3a4031.jpg"
               alt="Farmer"
               className="rounded-2xl w-full h-[500px] object-cover"
             />
@@ -178,7 +180,7 @@ function About() {
   className="relative rounded-2xl p-12 grid grid-cols-2 gap-12 mb-16 bg-cover bg-center overflow-hidden"
   style={{
     backgroundImage:
-      "url('../src/images/6ac5b4dbd5aad3b155da75cbafefdeb1083363eb.png')",
+      "url('../../src/assets/6ac5b4dbd5aad3b155da75cbafefdeb1083363eb.png')",
   }}
 >
   {/* Soft green overlay */}
@@ -193,7 +195,7 @@ function About() {
       Agriculture matters to the future of development
     </h2>
     <img
-      src="../src/images/1da4a8461f43255e5cd02a6b142104ebba1a681f.jpg"
+      src="../../src/assets/1da4a8461f43255e5cd02a6b142104ebba1a681f.jpg"
       alt="Farmers"
       className="rounded-2xl w-full h-64 object-cover"
     />
@@ -303,21 +305,21 @@ function About() {
           <h2 className="text-4xl font-bold text-gray-900 mb-12">What our customers say</h2>
 
           <div className="grid grid-cols-3 gap-8">
-            <TestimonialCard
+            <Testimonialcard
               rating={5}
               text="This seems to be exceptional. They are very expert in what they do. Thank you for your work. I will recommend it to all my essential friends."
               author="Daniel Craig"
               role="Customer"
               avatar="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200"
             />
-            <TestimonialCard
+            <Testimonialcard
               rating={5}
               text="This seems to be exceptional. They are very expert in what they do. Thank you for your work. I will recommend it to all my essential friends."
               author="Anarelo Amit"
               role="Customer"
               avatar="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200"
             />
-            <TestimonialCard
+            <Testimonialcard
               rating={5}
               text="This seems to be exceptional. They are very expert in what they do. Thank you for your work. I will recommend it to all my essential friends."
               author="Jenny Smith"

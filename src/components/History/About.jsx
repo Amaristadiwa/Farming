@@ -1,4 +1,6 @@
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import happyFarmers from '../../assets/fac523f62a67634ba7d3d4a2906f19cf498f0573.jpg';
+
 
 export default function AboutSection() {
   const features = [
@@ -15,11 +17,12 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src="src/images/fac523f62a67634ba7d3d4a2906f19cf498f0573.jpg"
-              alt="Happy farmers"
-              className="w-full h-full object-cover"
-            />
+           <img
+  src={happyFarmers}
+  alt="Happy farmers"
+  className="w-full h-full object-cover"
+/>
+
           </div>
 
           <div>

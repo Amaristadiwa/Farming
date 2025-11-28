@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Search, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../../../src/images/logo.png";
+import logo from "../../assets/logo.png";
 
 export default function Navbar() {
   const [pagesOpen, setPagesOpen] = useState(false);

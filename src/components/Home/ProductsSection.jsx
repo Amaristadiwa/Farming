@@ -1,4 +1,6 @@
 import { Sprout, Carrot, Wheat, Leaf } from 'lucide-react';
+import maize from '../../assets/maize.png';
+
 
 export default function ProductsSection() {
   const products = [
@@ -54,11 +56,12 @@ export default function ProductsSection() {
           </div>
 
           <div className="lg:w-1/3 flex items-center justify-center">
-            <img
-              src="src/images/maize.png"
-              alt="Fresh Corn"
-              className="w-full max-w-md h-auto"
-            />
+         <img
+  src={maize}
+  alt="Fresh Corn"
+  className="w-full max-w-md h-auto"
+/>
+
           </div>
 
           <div className="lg:w-1/3 space-y-12">

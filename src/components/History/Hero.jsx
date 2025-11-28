@@ -1,12 +1,15 @@
+import bgImage from '../../assets/56d2d3996939328860a9427715a3d02d7fdc38f5.jpg';
+
+
 export default function Hero() {
   return (
     <section className="relative h-80 overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: 'url(src/images/56d2d3996939328860a9427715a3d02d7fdc38f5.jpg)',
-        }}
-      >
+  className="absolute inset-0 bg-cover bg-center"
+  style={{
+    backgroundImage: `url(${bgImage})`,
+  }}
+>
         <div className="absolute inset-0 bg-green-900/60"></div>
       </div>
 

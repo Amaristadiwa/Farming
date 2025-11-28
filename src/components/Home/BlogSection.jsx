@@ -1,44 +1,52 @@
 import React, { useState } from "react";
 import { Calendar, User, ChevronLeft, ChevronRight } from "lucide-react";
+import post1 from "../../assets/post_1.jpg";
+import post2 from "../../assets/post_2.jpg";
+import post3 from "../../assets/post_3.jpg";
+import post4 from "../../assets/post_4.jpg";
+import post5 from "../../assets/post_5.jpg";
+
+
 
 export default function BlogSection() {
-  const posts = [
-    {
-      title: "Most technology is used in our agriculture",
-      date: "NOV 28, 2025",
-      author: "Admin",
-      category: "Agriculture",
-      image: "../src/images/post 1.jpg",
-    },
-    {
-      title: "Which type of farming is used in agriculture",
-      date: "NOV 28, 2025",
-      author: "Admin",
-      category: "Farming",
-      image: "../src/images/post 2.jpg",
-    },
-    {
-      title: "The Farmers Smartest Devices for 2025",
-      date: "NOV 28, 2025",
-      author: "Admin",
-      category: "Technology",
-      image: "../src/images/post 3.jpg",
-    },
-    {
-      title: "Soil health: Why it matters in 2025",
-      date: "NOV 28, 2025",
-      author: "Admin",
-      category: "Soil",
-      image: "../src/images/post 4.jpg",
-    },
-    {
-      title: "How to boost crop yield with AI",
-      date: "NOV 28, 2025",
-      author: "Admin",
-      category: "Innovation",
-      image: "../src/images/post 5.jpg",
-    },
-  ];
+const posts = [ 
+  {
+    title: "Most technology is used in our agriculture",
+    date: "NOV 28, 2025",
+    author: "Admin",
+    category: "Agriculture",
+    image: post1,
+  },
+  {
+    title: "Which type of farming is used in agriculture",
+    date: "NOV 28, 2025",
+    author: "Admin",
+    category: "Farming",
+    image: post2,
+  },
+  {
+    title: "The Farmers Smartest Devices for 2025",
+    date: "NOV 28, 2025",
+    author: "Admin",
+    category: "Technology",
+    image: post3,
+  },
+  {
+    title: "Soil health: Why it matters in 2025",
+    date: "NOV 28, 2025",
+    author: "Admin",
+    category: "Soil",
+    image: post4,
+  },
+  {
+    title: "How to boost crop yield with AI",
+    date: "NOV 28, 2025",
+    author: "Admin",
+    category: "Innovation",
+    image: post5,
+  },
+];
+
 
   // Show 3 posts per view
   const ITEMS_PER_PAGE = 3;

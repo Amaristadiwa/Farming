@@ -1,4 +1,6 @@
 import { Leaf, Award } from 'lucide-react';
+import farmerImg from "../../assets/e3a4b505969c511f04f6db863fc26b803f881806.jpg";
+
 
 export default function CtaSection() {
   return (
@@ -6,11 +8,12 @@ export default function CtaSection() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <img
-              src="src\images\e3a4b505969c511f04f6db863fc26b803f881806.jpg"
-              alt="Farmer"
-              className="rounded-3xl w-full h-[500px] object-cover"
-            />
+          <img
+  src={farmerImg}
+  alt="Farmer"
+  className="rounded-3xl w-full h-[500px] object-cover"
+/>
+
           </div>
 
           <div className="bg-yellow-400 rounded-3xl p-12">

@@ -1,4 +1,6 @@
 import { Leaf } from 'lucide-react';
+import farmerImg from '../../assets/bbf039044044b2e7b8fbee60796133ec7b3a4031.jpg';
+
 
 export default function AboutSection() {
   return (
@@ -6,11 +8,12 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img
-              src="src\images\bbf039044044b2e7b8fbee60796133ec7b3a4031.jpg"
-              alt="Farmer"
-              className="rounded-3xl w-full h-[600px] object-cover"
-            />
+        <img
+  src={farmerImg}
+  alt="Farmer"
+  className="rounded-3xl w-full h-[600px] object-cover"
+/>
+
             <div className="absolute bottom-12 right-12 bg-yellow-400 p-8 rounded-3xl max-w-[280px]">
               <div className="flex items-baseline gap-1 mb-2">
                 <span className="text-green-800 text-2xl">✱</span>

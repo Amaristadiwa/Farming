@@ -1,12 +1,14 @@
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from "react-router-dom";
+import heroBg from '../../assets/asdfg.jpg';
+
 
 export default function HeroSection() {
   return (
-    <section
-      className="relative h-screen min-h-[700px] bg-cover bg-center"
-      style={{ backgroundImage: "url('src/images/asdfg.jpg')" }}
-    >
+   <section
+  className="relative h-screen min-h-[700px] bg-cover bg-center"
+  style={{ backgroundImage: `url(${heroBg})` }}
+>
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/40 to-transparent"></div>
 
       <div className="relative container mx-auto px-4 h-full flex items-center pt-24">
