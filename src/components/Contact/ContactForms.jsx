@@ -7,7 +7,7 @@ export default function ContactForm() {
         {/* Left Image */}
         <div className="h-full w-full">
           <img
-            src="../src/assets/746e64b0bc71c612550c5832005fe523d01fe6a2.jpg"
+            src="../../src/assets/746e64b0bc71c612550c5832005fe523d01fe6a2.jpg"
             alt="Farmer"
             className="w-full h-full object-cover"
           />

@@ -1,13 +1,19 @@
 import React from "react";
+import partner1 from "../../assets/partner_1.png";
+import partner2 from "../../assets/partner_2.png";
+import partner3 from "../../assets/partner_3.png";
+import partner4 from "../../assets/partner_4.png";
+import partner5 from "../../assets/partner_5.png";
+import partner6 from "../../assets/partner_6.png";
 
 export default function PartnerLogo() {
   const partners = [
-    { name: "Partner 1", logo: "src/images/partner 1.png" },
-    { name: "Partner 2", logo: "src/images/partner 2.png" },
-    { name: "Partner 3", logo: "src/images/partner 3.png" },
-    { name: "Partner 4", logo: "src/images/partner 4.png" },
-    { name: "Partner 5", logo: "src/images/partner 5.png" },
-    { name: "Partner 6", logo: "src/images/partner 6.png" },
+    { name: "Partner 1", logo: partner1 },
+    { name: "Partner 2", logo: partner2 },
+    { name: "Partner 3", logo: partner3 },
+    { name: "Partner 4", logo: partner4 },
+    { name: "Partner 5", logo: partner5 },
+    { name: "Partner 6", logo: partner6 },
   ];
 
   // duplicate array so it scrolls seamlessly
@@ -34,3 +40,4 @@ export default function PartnerLogo() {
     </section>
   );
 }
+
