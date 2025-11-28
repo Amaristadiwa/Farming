@@ -1,4 +1,6 @@
 import React from 'react';
+import farmerImg from "../../assets/746e64b0bc71c612550c5832005fe523d01fe6a2.jpg";
+
 
 export default function ContactForm() {
   return (
@@ -6,11 +8,11 @@ export default function ContactForm() {
       <div className="bg-white rounded-3xl shadow-lg grid grid-cols-1 md:grid-cols-2 overflow-hidden w-full max-w-6xl">
         {/* Left Image */}
         <div className="h-full w-full">
-          <img
-            src="../../src/assets/746e64b0bc71c612550c5832005fe523d01fe6a2.jpg"
-            alt="Farmer"
-            className="w-full h-full object-cover"
-          />
+       <img
+  src={farmerImg}
+  alt="Farmer"
+  className="w-full h-full object-cover"
+/>
         </div>
 
         {/* Right Side Form */}
